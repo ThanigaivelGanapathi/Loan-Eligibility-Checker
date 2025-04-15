@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <title>Loan Eligibility Prediction</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,26 +11,26 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#1877F2">
   <div class="container-fluid">
-    <a class="navbar-brand text-dark" href="#">Loan Predictor</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active text-muted" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="predict">Predict</a>
-        </li>
-      </ul>
-    </div>
+    <a class="navbar-brand" href="#" style="color:#fff">Loan Predictor</a>
+    <a class="text-dark" href="/">
+      <img src="{% static 'LoanPredictor/images/home.png' %}" alt="Loan Banner" style="width:40px;">
+    </a>
+
+
+<!--    <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--      <ul class="navbar-nav ms-auto">-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link active text-muted" href="/">Home</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link text-dark" href="predict">Predict</a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div>-->
   </div>
 </nav>
-
 
 <div class="container mt-4">
     <h2>Check Your Loan Eligibility</h2>
